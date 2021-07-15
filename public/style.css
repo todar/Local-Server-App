@@ -1,0 +1,38 @@
+/* All these styles are just for the demo 😎 */
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.77);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 20px;
+}
+
+code {
+  background: rgb(236 172 27 / 16%);
+  padding: 0 3px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.demo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  box-shadow: -1px 2px 6px 0px rgb(0 0 0 / 16%);
+}
+
+.demo > * {
+  margin: 5px;
+  width: 400px;
+  min-height: 40px;
+}
+
+.demo h2 {
+  font-size: 1.2rem;
+}
