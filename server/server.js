@@ -1,13 +1,14 @@
 // Settings for the server
 const PORT = process.env.PORT || 8000;
-const PUBLIC_PATH = 'public';
+
+const path = require('path')
 
 // Create an express app. Will use a static folder to
 // server all basic html.
 const express = require('express');
 const app = express();
 app.use(express.json());
-app.use(express.static(PUBLIC_PATH));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Create server from express app
 const http = require('http');
